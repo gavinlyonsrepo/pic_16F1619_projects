@@ -1,11 +1,12 @@
 
  
-![PIC](https://github.com/gavinlyonsrepo/pic_16F716_projects/blob/master/images/pic16f1619.jpg)
+![PIC](https://github.com/gavinlyonsrepo/pic_16F1619_projects/blob/master/images/pic16f1619.jpg)
 
 Overview
 --------------------------------------------
 * Name: pic_16F1619_projects
-* Description: A set of projects and example code for a Pic 16F1619 Microcontroller,
+* Description: A set of projects and example code for a **Microchip** 
+ PIC 16F1619 Micro-controller,
 written in C.
 * Author: Gavin Lyons 
 
@@ -22,7 +23,7 @@ Table of contents
 
 Project List
 -----------------------------------------
-A set of Projects and example code for the 18-pin, 8-bit Pic 16F716 Microcontroller,
+A set of Projects and example code for the 20-pin, 8-bit Pic 16F1619 Microcontroller,
 in C.
 Each Project/example has a short readme, schematic and code file
 in the relevant subfolder.
