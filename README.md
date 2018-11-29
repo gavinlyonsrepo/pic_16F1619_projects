@@ -25,13 +25,13 @@ Project List
 -----------------------------------------
 A set of Projects and example code for the 20-pin, 8-bit Pic 16F1619 Microcontroller,
 in C.
-Each Project/example has a short readme, schematic and code file
-in the relevant subfolder.
+Each Project/example has a short Readme, schematic(where applicable) and code files
+in the relevant subfolder. 
 
 
 | Num | Desc | Link |
 | --- | --- | --- |
-| 1  | Blink LED in C code  | [URL](projects/blink_led_c) |
+| 1  | Blink LED in C code  | [URL](projects/blink) |
 | 2  | ... | ... |
 | 3  | ... | ... |
 | 4  | ... | ... |
