@@ -3,9 +3,8 @@
  * Author: Gavin Lyons
  * IDE: MPLAB v5.05
  * Compiler: xc8 v2.0
- * Description: see URL for full details, project 1.
+ * Description: see URL for full details, project 2.
  * URL: https://github.com/gavinlyonsrepo/pic_16F1619_projects
- * Created on 20 December 2018, 20:07
  */
 
 #include "mcc.h"
@@ -15,12 +14,14 @@ void SYSTEM_Initialize(void)
 {
     PIN_MANAGER_Initialize();
     OSCILLATOR_Initialize();
+    PWM3_Initialize();
+    TMR2_Initialize();
 }
 
 void OSCILLATOR_Initialize(void)
 {
-    // SCS FOSC; SPLLEN disabled; IRCF 4MHz_HF; 
-    OSCCON = 0x68;
+    // SCS FOSC; SPLLEN disabled; IRCF 500KHz_MF; 
+    OSCCON = 0x38;
     // TUN 0; 
     OSCTUNE = 0x00;
     // SBOREN disabled; BORFS disabled; 

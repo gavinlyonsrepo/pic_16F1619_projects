@@ -3,7 +3,6 @@
  * Purpose: header file for mcc.c
  */
 
-
 #ifndef MCC_H
 #define	MCC_H
 #include <xc.h>
@@ -11,6 +10,8 @@
 #include "pin_manager.h"
 #include <stdint.h>
 #include <stdbool.h>
+#include "pwm3.h"
+#include "tmr2.h"
 
 
 

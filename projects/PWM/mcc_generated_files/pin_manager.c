@@ -3,9 +3,8 @@
  * Author: Gavin Lyons
  * IDE: MPLAB v5.05
  * Compiler: xc8 v2.0
- * Description: see URL for full details, project 1.
- * URL: https://github.com/gavinlyonsrepo/pic_16f1619_projects
- * Created on 20 December 2018, 20:10
+ * Description: see URL for full details, project 2.
+ * URL: https://github.com/gavinlyonsrepo/pic_16F1619_projects
  */
 
 #include <xc.h>
@@ -13,19 +12,22 @@
 #include "stdbool.h"
 
 
+
+
+
 void PIN_MANAGER_Initialize(void)
 {
     /**
     LATx registers
     */
-    LATA = 0x00;
+    LATA = 0x05;
     LATB = 0x00;
     LATC = 0x00;
 
     /**
     TRISx registers
     */
-    TRISA = 0x33;
+    TRISA = 0x32;
     TRISB = 0xF0;
     TRISC = 0xFF;
 
@@ -58,6 +60,14 @@ void PIN_MANAGER_Initialize(void)
     SLRCONB = 0xF0;
     SLRCONC = 0xFF;
 
+
+
+
+
+   
+    
+	
+    RA2PPS = 0x0E;   //RA2->PWM3:PWM3OUT;    
 }
   
 void PIN_MANAGER_IOC(void)

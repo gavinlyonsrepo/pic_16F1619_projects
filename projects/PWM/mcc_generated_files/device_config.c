@@ -3,9 +3,8 @@
  * Author: Gavin Lyons
  * IDE: MPLAB v5.05
  * Compiler: xc8 v2.0
- * Description: see URL for full details, project 1.
+ * Description: see URL for full details, project 2.
  * URL: https://github.com/gavinlyonsrepo/pic_16F1619_projects
- * Created on 20 December 2018, 20:03
  */
 
 // Configuration bits: selected in the GUI
@@ -28,7 +27,7 @@
 #pragma config STVREN = ON    // Stack Overflow/Underflow Reset Enable->Stack Overflow or Underflow will cause a Reset
 #pragma config BORV = LO    // Brown-out Reset Voltage Selection->Brown-out Reset Voltage (Vbor), low trip point selected.
 #pragma config LPBOR = OFF    // Low-Power Brown Out Reset->Low-Power BOR is disabled
-#pragma config LVP = ON    // Low-Voltage Programming Enable->High-voltage on MCLR/VPP must be used for programming
+#pragma config LVP = ON    // Low-Voltage Programming Enable->Low-voltage programming enabled
 
 // CONFIG3
 #pragma config WDTCPS = WDTCPS1F    // WDT Period Select->Software Control (WDTPS)
