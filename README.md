@@ -4,8 +4,8 @@
 Overview
 --------------------------------------------
 * Name: pic_16F1619_projects
-* Description: A set of projects and example code for a **Microchip** 
- PIC 16F1619 Micro-controller, written in C.
+* Description: A set of projects for a **Microchip** 
+ PIC 16F1619 Micro-controller, written in C(xc8).
 * Author: Gavin Lyons 
 
 Table of contents
@@ -22,25 +22,18 @@ Project List
 A set of Projects and example code for the 20-pin, 8-bit PIC 16F1619 Microcontroller,
 made by *Microchip*. 
 
-This is the PIC that is in included with the
+This is the PIC that was in included with the
 DM164137 - Development Kit, Curiosity, Integrated Programmer/Debugger,
-which supports 8/14/20 Pin 8-Bit PIC MCU's.
+which supports 8/14/20 Pin 8-Bit PIC MCU's. 
 
-Each Project/example has a short Readme, schematic(where applicable) and code files
-in the relevant sub folder. All code is written in C.
-
-**Example code:**
-
-| Num | Desc | Link |
-| --- | --- | --- |
-| 1  | Blink LED | [URL](projects/blink) |
-| 2  | Fade LED with PWM | [URL](projects/PWM) |
+Each Project has a short Readme, schematic and code files
+in the relevant sub folder. All code is written in C(xc8 compiler)
 
 **Project Code:**
 
 | Num | Desc | Link |
 | --- | --- | --- |
-| 1  | TO DO | ... |
+| 1  | Analog input data to seven segment display | [URL](projects/SevenSeg) |
 
 Communication
 -----------
