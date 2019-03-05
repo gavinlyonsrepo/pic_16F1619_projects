@@ -26,6 +26,10 @@ This is the PIC that was in included with the
 DM164137 - Development Kit, Curiosity, Integrated Programmer/Debugger,
 which supports 8/14/20 Pin 8-Bit PIC MCU's. 
 
+The curiosity board was used for development of these programs.
+
+![PICTURE](https://github.com/gavinlyonsrepo/pic_16F1619_projects/blob/master/images/pcb.jpg)
+
 Each Project has a short Readme, schematic and code files
 in the relevant sub folder. All code is written in C(xc8 compiler)
 
@@ -34,6 +38,9 @@ in the relevant sub folder. All code is written in C(xc8 compiler)
 | Num | Desc | Link |
 | --- | --- | --- |
 | 1  | Analog input data to seven segment display | [URL](projects/SevenSeg) |
+| 2  | Seven segment displaying DHT11 sensors data | [URL](projects/DHT11) |
+
+ 	4-digit 7 segment LED displaying DHT11 sensors data
 
 Communication
 -----------
