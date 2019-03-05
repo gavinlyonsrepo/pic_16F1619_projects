@@ -44,21 +44,21 @@ C code to be inserted into your project. It is built in to the MPLAB IDE
 Using an interface, it enables and configures a rich set of 
 peripherals and functions specific to the application.
 
-RC4 = Analog In.
+RC4 = DHT11 signal.
 RA2 = Status LED.
 
-Error codes
+Error codes( on digit 1 , all ready digits off)
 
 1. 7 = Communication Start-up Error. The Program has hanged up while trying to communicate
 2. 8 = Communications Error. No response to the PICs request signal from sensor.
 3. 9 = Checksum Error. Received all data from sensor but it failed checksum.
 
-Communication Format with DHT11 can be separated into three stages.
+Communication Format with DHT11 can be separated into four stages.
 
-    Request
-    Response
-    Data Reading 5 bytes.
-    Sum the 1st 4 bytes and check if the result is the same as CheckSum(5th byte)
+1. Request
+2. Response
+3. Data Reading 5 bytes.
+4. Sum the 1st 4 bytes and check if the result is the same as CheckSum(5th byte)
 
 
 GPIO function on PIC, 3 lines to 74HC595
@@ -100,6 +100,5 @@ NOTE: For schematic the pin NUMBER labels on 4-digit 7-segment are different:
 (I used library footprint of a slightly different module)
 Use the pin numbers in table above.
 or just use the pin NAME(letter) labels on part which are correct.
-
 
 ![schematic TODO](https://github.com/gavinlyonsrepo/pic_16F1619_projects/blob/master/images/DHT11.png)
