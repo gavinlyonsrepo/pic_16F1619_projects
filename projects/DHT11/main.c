@@ -80,10 +80,10 @@ void DHT11_Data(void)
         {
             if (Sum == (RH + Temp))  // is the Checksum OK?
             {
-                digit1 = (Temp / 10) % 10;
-                digit2 = Temp % 10;
-                digit3 = (RH / 10) % 10;
-                digit4 = RH % 10;
+                digit4 = (Temp / 10) % 10;
+                digit3 = Temp % 10;
+                digit2 = (RH / 10) % 10;
+                digit1 = RH % 10;
             }else // bad checksum display all nines.
             {
                 digit1 = 9;

@@ -87,4 +87,4 @@ NOTE: For schematic the pin NUMBER labels on 4-digit 7-segment are different:
 Use the pin numbers in table above.
 or just use the pin NAME(letter) labels on part which are correct.
 
-![PICTURE ](https://github.com/gavinlyonsrepo/pic_16F71619_projects/blob/master/images/SevenSeg.png)
+![PICTURE ](https://github.com/gavinlyonsrepo/pic_16F1619_projects/blob/master/images/SevenSeg.png)

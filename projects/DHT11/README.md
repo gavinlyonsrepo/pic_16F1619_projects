@@ -102,4 +102,4 @@ Use the pin numbers in table above.
 or just use the pin NAME(letter) labels on part which are correct.
 
 
-![schematic TODO](https://github.com/gavinlyonsrepo/pic_16F71619_projects/blob/master/images/DHT11.png)
+![schematic TODO](https://github.com/gavinlyonsrepo/pic_16F1619_projects/blob/master/images/DHT11.png)
