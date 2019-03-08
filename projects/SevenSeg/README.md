@@ -82,9 +82,7 @@ https://en.wikipedia.org/wiki/Seven-segment_display
 
 ![PICTURE](https://github.com/gavinlyonsrepo/pic_16F1619_projects/blob/master/images/7segpinout.png)
 
-NOTE: For schematic the pin NUMBER labels on 4-digit 7-segment are different: 
-(I used library footprint of a slightly different module)
-Use the pin numbers in table above.
-or just use the pin NAME(letter) labels on part which are correct.
+Schematic
+------------------------
 
 ![PICTURE ](https://github.com/gavinlyonsrepo/pic_16F1619_projects/blob/master/images/SevenSeg.png)

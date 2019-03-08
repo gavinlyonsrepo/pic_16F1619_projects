@@ -39,7 +39,7 @@ in the relevant sub folder. All code is written in C(xc8 compiler)
 | --- | --- | --- |
 | 1  | Analog input data to seven segment display | [URL](projects/SevenSeg) |
 | 2  | Seven segment displaying DHT11 sensors data | [URL](projects/DHT11) |
-
+| 3 | ----------- | --------------- |
 
 Communication
 -----------
