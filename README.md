@@ -34,11 +34,6 @@ The curiosity board was used for development of these programs.
 Each Project has a short Readme, schematic and code files
 in the relevant sub folder. All code is written in C(xc8 compiler)
 
-In the "lib" sub-folder there is a eagle library file (PIC_parts.lbr) for the PIC 16F1619 (DIL package)
-as I could not find it anywhere for free, so I made it.
- 
- [Eagle library](docs/eagle/eagle_lib)
-
 
 **Project Code:**
 
@@ -54,7 +49,7 @@ Eagle Library
 In the "lib" sub-folder there is a eagle library file (PIC_parts.lbr) for the PIC 16F1619 (DIL package)
 as I could not find it anywhere for free, so I made it.
  
- [Eagle library](docs/eagle/eagle_lib
+ [Eagle library](docs/eagle/eagle_lib)
 
 
 Communication
