@@ -14,6 +14,7 @@ Table of contents
   * [Overview](#overview)
   * [Table of contents](#table-of-contents)
   * [Project List](#project-list)
+  * [Eagle Library](#eagle-library)
   * [Communication](#communication)
   * [Copyright](#copyright)
 
@@ -33,6 +34,12 @@ The curiosity board was used for development of these programs.
 Each Project has a short Readme, schematic and code files
 in the relevant sub folder. All code is written in C(xc8 compiler)
 
+In the "lib" sub-folder there is a eagle library file (PIC_parts.lbr) for the PIC 16F1619 (DIL package)
+as I could not find it anywhere for free, so I made it.
+ 
+ [Eagle library](docs/eagle/eagle_lib)
+
+
 **Project Code:**
 
 | Num | Desc | Link |
@@ -40,6 +47,15 @@ in the relevant sub folder. All code is written in C(xc8 compiler)
 | 1  | Analog input data to seven segment display | [URL](projects/SevenSeg) |
 | 2  | Seven segment displaying DHT11 sensors data | [URL](projects/DHT11) |
 | 3 | ----------- | --------------- |
+
+
+Eagle Library
+--------------
+In the "lib" sub-folder there is a eagle library file (PIC_parts.lbr) for the PIC 16F1619 (DIL package)
+as I could not find it anywhere for free, so I made it.
+ 
+ [Eagle library](docs/eagle/eagle_lib
+
 
 Communication
 -----------
