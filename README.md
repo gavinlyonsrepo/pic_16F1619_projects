@@ -5,7 +5,7 @@ Overview
 --------------------------------------------
 * Name: pic_16F1619_projects
 * Description: A set of projects for a **Microchip** 
- PIC 16F1619 Micro-controller, written in C(xc8).
+ PIC 16F1619 Micro-controller, written in C (xc8 complier).
 * Author: Gavin Lyons 
 
 Table of contents
@@ -26,8 +26,7 @@ made by *Microchip*.
 This is the PIC that was in included with the
 DM164137 - Development Kit, Curiosity, Integrated Programmer/Debugger,
 which supports 8/14/20 Pin 8-Bit PIC MCU's. 
-
-The curiosity board was used for development of these programs.
+The curiosity board was used during the development of these programs.
 
 ![PICTURE](https://github.com/gavinlyonsrepo/pic_16F1619_projects/blob/master/images/pcb.jpg)
 
@@ -39,15 +38,15 @@ in the relevant sub folder. All code is written in C(xc8 compiler)
 
 | Num | Desc | Link |
 | --- | --- | --- |
-| 1  | Analog input data to seven segment display | [URL](projects/SevenSeg) |
+| 1  | Seven segment display displaying Analog input data | [URL](projects/SevenSeg) |
 | 2  | Seven segment displaying DHT11 sensors data | [URL](projects/DHT11) |
-| 3 | ----------- | --------------- |
-
+| 3 |  HD44780-based character LCD 16x02 displaying Analog input data | [URL](projects/LCD16x02)  |
+| 4 | ----------- | --------------- |
+| 5 | ----------- | --------------- |
 
 Eagle Library
 --------------
-In the "lib" sub-folder there is a eagle library file (PIC_parts.lbr) for the PIC 16F1619 (DIL package)
-as I could not find it anywhere for free, so I made it.
+In the "lib" sub-folder there is a custom eagle library file (PIC_parts.lbr) for the PIC 16F1619 (DIL package)
  
  [Eagle library](docs/eagle/eagle_lib)
 
@@ -60,7 +59,7 @@ Communication
 Copyright
 ---------
 Copyright (C) 2018 Gavin Lyons 
-This program is free software; you can redistribute it and/or modify
+These programs are free software; you can redistribute it and/or modify
 it under the terms of the GNU General Public license published by
 the Free Software Foundation, see LICENSE.md in documentation section 
 for more details.
