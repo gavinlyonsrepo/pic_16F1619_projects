@@ -1,13 +1,12 @@
 
 Overview
 --------------------------------------------
-* Name: DHT11
-* Description: Display the data from a DHt11 humdity sensor to 
-a 4 digit seven segment display.
+* Name: LCD 16X02
+* Description: Display the data from an analog input to an LCD 16x02 display HD44780
 * Author: Gavin Lyons.
-* Complier: xc8 v2.05 compiler
+* Complier: xc8 v2.00 compiler
 * PIC: PIC16F1619 
-* IDE:  MPLAB X v5.05
+* IDE:  MPLAB X v5.00
 * Development board: Microchip Curiosity Board, PIC16F1619
 
 Table of contents
@@ -67,4 +66,4 @@ Pins 7 to 14 are data lines (D0-D7). Data transfer to and from the display can b
 Schematic
 ------------------------
 
-![schematic TODO](https://github.com/gavinlyonsrepo/pic_16F1619_projects/blob/master/images/LCD16x02.png)
+![schematic (https://github.com/gavinlyonsrepo/pic_16F1619_projects/blob/master/images/LCD16x02.png)
