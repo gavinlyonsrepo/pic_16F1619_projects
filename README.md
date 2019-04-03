@@ -41,7 +41,7 @@ in the relevant sub folder. All code is written in C(xc8 compiler)
 | 1  | Seven segment display displaying Analog input data | [URL](projects/SevenSeg) |
 | 2  | Seven segment displaying DHT11 sensors data | [URL](projects/DHT11) |
 | 3 |  HD44780-based LCD 16x02 displaying Analog input data (4 bit mode, 3 pins) | [URL](projects/LCD16x02)|
-| 4 |  HD44780-based LCD 16x02 library  (8-bit mode , 11 pins)| [URL](projects/LCD16x028bit)  |
+| 4 |  HD44780-based LCD 16x02 library  (8-bit mode , 11 pins)| [URL](projects/LCD16x02_8bit)  |
 | 5 | ----------- | --------------- |
 | 6 | ----------- | --------------- |
 
