@@ -2,7 +2,7 @@
 Overview
 --------------------------------------------
 * Name: LCD 16X02
-* Description: Display the data from an analog input to an LCD 16x02 display HD44780
+* Description: Display the data from an analog input to an LCD 16x02 display HD44780 using 4-bit mode.
 * Author: Gavin Lyons.
 * Complier: xc8 v2.00 compiler
 * PIC: PIC16F1619 
@@ -57,7 +57,8 @@ GPIO PORTC function on PIC, 3 lines to 74HC595
 
 HD44780 based character LCD displays use 14 wire connections: 8 data lines (D0-D7), 3 control lines (RS, E, R/W), and three power lines (Vdd, Vss, Vee). Some LCDs come with backlight features that help reading display data in low illumination conditions. They have two additional connections (LED+ and LED- or A and K).
 
-The control pin R/W determines if the data transfer between the LCD module and an external microcontroller are actual character data or command/status. The enable pin (E) initiates the actual data transfer. When writing to the LCD display, the data is transferred only on the high to low transition of the E pin.
+The control pin RS determines if the data transfer between the LCD module and an external microcontroller are actual character data or command/status. The enable pin (E) initiates the actual data transfer. When writing to the LCD display, the data is transferred only on the high to low transition of the E pin.
+Read/Write(RW): This signal is used to write the data/cmd to LCD and reads the busy flag of LCD. For write operation the RW should be LOW and for read operation the R/W should be HIGH.
 
 The Vdd pin (2) should be connected to the positive power supply and Vss (1) to ground. Pin 3 (Vee) is for display contrast adjustment.
 
@@ -66,4 +67,4 @@ Pins 7 to 14 are data lines (D0-D7). Data transfer to and from the display can b
 Schematic
 ------------------------
 
-![schematic (https://github.com/gavinlyonsrepo/pic_16F1619_projects/blob/master/images/LCD16x02.png)
+![schematic](https://github.com/gavinlyonsrepo/pic_16F1619_projects/blob/master/images/LCD16x02.png)
