@@ -122,7 +122,7 @@ void TMR0_ISR(void)
     // add your TMR0 interrupt custom code
      // ---------- Glyons ------------
         counter++;
-        if(counter==60)
+        if(counter==120)
         { 
           counter=0;
          LED_STATUS_Toggle();
