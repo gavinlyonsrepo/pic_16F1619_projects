@@ -34,7 +34,7 @@ Each Project has a short Readme, schematic and code files
 in the relevant sub folder. All code is written in C(xc8 compiler)
 
 
-**Project Code:**
+**Project Code List:**
 
 | Num | Desc | Link |
 | --- | --- | --- |
@@ -42,8 +42,11 @@ in the relevant sub folder. All code is written in C(xc8 compiler)
 | 2  | Seven segment displaying DHT11 sensors data | [URL](projects/DHT11) |
 | 3 |  HD44780-based LCD 16x02 displaying Analog input data (4 bit mode, 3 pins) | [URL](projects/LCD16x02)|
 | 4 |  HD44780-based LCD 16x02 library  (8-bit mode , 11 pins)| [URL](projects/LCD16x02_8bit)  |
-| 5 | ----------- | --------------- |
-| 6 | ----------- | --------------- |
+| 5 |  HD44780-based LCD 16x02 library I2C bus & PCF8574 interface (2 pins) |[URL](projects/LCD16x02_I2C)  |
+| 6 |  SSD1306 OLED 128 by 32 library ( ASCII, text only) | [URL](projects/OLED_I2C)|
+| 7 | ----------- | --------------- |
+| 8 | ----------- | --------------- |
+| 9 | ----------- | --------------- |
 
 Eagle Library
 --------------
