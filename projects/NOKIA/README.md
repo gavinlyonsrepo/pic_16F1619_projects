@@ -66,7 +66,7 @@ Library output sample:
 
 Pinout:
 
-![PICTURE](https://github.com/gavinlyonsrepo/pic_16F1619_projects/blob/master/images/NOKIA.jpg)
+![PICTURE](https://github.com/gavinlyonsrepo/pic_16F1619_projects/blob/master/images/NOKIA2.jpg)
 
 Schematic
 ------------------------
