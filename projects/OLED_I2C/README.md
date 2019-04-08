@@ -80,16 +80,16 @@ more memory(I assume).
 **OLED 128 by 64 SSD1306**
 
 I have only tested this on a OLED 128 by 32 SSD1306 but it should work on a OLED 128 by 64 SSD1306
-as well with one modification to library( comment in/out a block of marked code at top of file)
+as well with one modification to library( comment in/out a block of marked code at top of oled.h)
  
 
 Two lines:
 
-![SSD1306 1](https://github.com/gavinlyonsrepo/pic_16F1619_projects/blob/master/images/oledpic1.jpg)
+![SSD1306 1](https://github.com/gavinlyonsrepo/pic_16F1619_projects/blob/master/images/oledpic2.jpg)
 
 Four lines:
 
-![SSD1306 2 ](https://github.com/gavinlyonsrepo/pic_16F1619_projects/blob/master/images/oledpic2.jpg)
+![SSD1306 2 ](https://github.com/gavinlyonsrepo/pic_16F1619_projects/blob/master/images/oledpic1.jpg)
 
 Schematic
 ------------------------

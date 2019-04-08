@@ -64,6 +64,9 @@ The Vdd pin (2) should be connected to the positive power supply and Vss (1) to 
 
 Pins 7 to 14 are data lines (D0-D7). Data transfer to and from the display can be achieved either in 8-bit or 4-bit mode. The 8-bit mode uses all eight data lines to transfer a byte, whereas, in 4-bit mode, a byte is transferred as two 4-bit nibbles. In the later case, only the upper 4 data lines (D4-D7) are used. This technique is beneficial as this saves some input/output pins of microcontroller. This example uses 4-bit mode.
 
+![pinout](https://github.com/gavinlyonsrepo/pic_16F1619_projects/blob/master/images/LCD.jpg)
+
+
 Schematic
 ------------------------
 

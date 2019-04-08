@@ -1,5 +1,5 @@
 /*
-* Project Name: 1619_LCD
+* Project Name:OLED_I2C
 * File: main.c 
 * Desc: Display a analog input on a 128*32 OLED SSD1306 using I2C
 * Author: Gavin Lyons.
