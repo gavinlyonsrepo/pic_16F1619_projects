@@ -74,8 +74,7 @@ This library turns the OLED into a character 21x04 based screen.
 A total of 84 characters.
 There are no graphics in library and one font. 
 Bear in mind this PIC has limited memory. Data space is 1K and program space 8k.
-This example program is already at 65% of program space. Programming a graphics bitmap or multiple fonts requires
-more memory(I assume). 
+This example program is already at 50% of program space and 20% of data space.
 
 **OLED 128 by 64 SSD1306**
 

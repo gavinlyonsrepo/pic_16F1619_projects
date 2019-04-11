@@ -24,9 +24,9 @@ void Oled_Command( uint8_t command )
   data_I2C[0] = SSD1306_COMMAND ; 
   data_I2C[1] = command; 
 
-  i2c_open(SSD1306_ADDR);
+ 
   i2c_writeNBytes(SSD1306_ADDR, data_I2C, 2);
-  i2c_close();
+ 
 }
 
 //Function to Send data byte to OLED, passed byte
@@ -37,9 +37,9 @@ void Oled_Data( uint8_t value )
   data_I2C[0] =SSD1306_DATA_CONTINUE ; 
   data_I2C[1] = value; 
   
-  i2c_open(SSD1306_ADDR);
+
   i2c_writeNBytes(SSD1306_ADDR, data_I2C, 2);
-  i2c_close();
+ 
 }
 
 //Function to init OLED

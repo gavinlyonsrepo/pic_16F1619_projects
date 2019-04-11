@@ -1,5 +1,5 @@
 /*
-* Project Name:OLED_I2C
+* Project Name: 1619_LCD
 * File: main.c 
 * Desc: Display a analog input on a 128*32 OLED SSD1306 using I2C
 * Author: Gavin Lyons.
@@ -48,16 +48,15 @@ void Setup(void)
 void DisplayData(void)
 {
     
+    
     uint16_t potvalue=0; //var to hold pot value from RA4 
-    float voltage = 0;
-    uint16_t display_value = 0;
+    uint16_t display_value = 0; //var to hold voltage value
     char str1[3]; 
     char str2[3];
     char str3[5];
     // Code to display 0-5V assumes vdd = 5V
     potvalue = ADC_GetConversion(ADC_IN)>>6;
-    voltage = (potvalue *  0.00488281);
-    display_value = (voltage*100);   
+    display_value  = ((potvalue *  49)/100);
     sprintf(str1, "%u",  ( display_value/100)%10);
     sprintf(str2, "%u%u", ( display_value/10)%10, ( display_value/1)%10); 
     sprintf(str3, "%u",potvalue);
@@ -72,6 +71,7 @@ void DisplayData(void)
     Oled_WriteString(" Volts ");
     Oled_WriteString(str3);
     Oled_WriteString(" ADC  ");
+
 
 }
 /********** EOF *******/
