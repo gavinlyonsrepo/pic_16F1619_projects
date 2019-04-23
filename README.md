@@ -33,6 +33,7 @@ The curiosity board was used during the development of these programs.
 Each Project has a short Readme, schematic and code files
 in the relevant sub folder. All code is written in C(xc8 compiler)
 
+LCD16X02_4bit_2
 
 **Project Code List:**
 
@@ -41,12 +42,13 @@ in the relevant sub folder. All code is written in C(xc8 compiler)
 | 1  | Seven segment display displaying Analog input data | [URL](projects/SevenSeg) |
 | 2  | Seven segment displaying DHT11 sensors data | [URL](projects/DHT11) |
 | 3 |  HD44780-based LCD 16x02 library (4 bit mode, shift register, 3 GPIO  pins) | [URL](projects/LCD16x02)|
-| 4 |  HD44780-based LCD 16x02 library  (8-bit mode , 11 GPIO pins)| [URL](projects/LCD16x02_8bit)  |
-| 5 |  HD44780-based LCD 16x02 library I2C bus & PCF8574 interface (2 GPIO pins) |[URL](projects/LCD16x02_I2C)  |
-| 6 |  SSD1306 OLED 128 by 32 library ( ASCII, text only) | [URL](projects/OLED_I2C)|
-| 7 |  Nokia 5110 LCD  PCD8544 controller library ( ASCII, text only)  | [URL](projects/NOKIA) |
-| 8 | ----------- | --------------- |
+| 4 |  HD44780-based LCD 16x02 library (4 bit mode, 6 GPIO  pins) | [URL](projects/LCD16X02_4bit_2)|
+| 5 |  HD44780-based LCD 16x02 library  (8-bit mode , 11 GPIO pins)| [URL](projects/LCD16x02_8bit)  |
+| 6 |  HD44780-based LCD 16x02 library I2C bus & PCF8574 interface (2 GPIO pins) |[URL](projects/LCD16x02_I2C)  |
+| 7 |  SSD1306 OLED 128 by 32 library ( ASCII, text only) | [URL](projects/OLED_I2C)|
+| 8 |  Nokia 5110 LCD  PCD8544 controller library ( ASCII, text only)  | [URL](projects/NOKIA) |
 | 9 | ----------- | --------------- |
+| 10 | ----------- | --------------- |
 
 Eagle Library
 --------------

@@ -65,8 +65,7 @@ void LCDgoto(char x, char y)
    LCDcmd(addr);
 }
 
-//flip the bit RW The control pin R/W determines if the data transfer between the LCD module and 
-//an external microcontroller are actual character data or command/status.
+//Flip the bit en The control pin enable  data transfer with the LCD module 
 void LCDtoggle(void)
    {
    dataout ^= 0x10;
