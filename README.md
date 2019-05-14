@@ -33,7 +33,6 @@ The curiosity board was used during the development of these programs.
 Each Project has a short Readme, schematic and code files
 in the relevant sub folder. All code is written in C(xc8 compiler)
 
-LCD16X02_4bit_2
 
 **Project Code List:**
 

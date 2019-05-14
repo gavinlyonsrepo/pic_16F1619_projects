@@ -28,9 +28,9 @@ void lcd_send_data (unsigned char data)
     data_I2C[2] = data_l|DATA_BYTE_ON; //enable=1 and rs =1 1101  YYYY-X-en-X-rs
     data_I2C[3] = data_l|DATA_BYTE_OFF; //enable=0 and rs =1 1001 YYYY-X-en-X-rs
 
-    i2c_open(SLAVE_ADDRESS_LCD);
+    //i2c_open(SLAVE_ADDRESS_LCD);
     i2c_writeNBytes (SLAVE_ADDRESS_LCD, data_I2C, 4);
-    i2c_close(); 
+    //i2c_close(); 
 }
 
 // send command to LCD
@@ -46,9 +46,9 @@ void lcd_send_cmd (unsigned char data)
     data_I2C[2] = data_l|CMD_BYTE_ON; // 1100 YYYY-X-en-X-rs enable=1 and rs =0
     data_I2C[3] = data_l|CMD_BYTE_OFF; // 1000 YYYY-X-en-X-rs enable=0 and rs =0
 	
-    i2c_open(SLAVE_ADDRESS_LCD);
+   // i2c_open(SLAVE_ADDRESS_LCD);
     i2c_writeNBytes (SLAVE_ADDRESS_LCD, data_I2C, 4);  
-    i2c_close();
+    //i2c_close();
 }
 
 //Clear LCD
