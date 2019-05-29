@@ -20,7 +20,7 @@ unsigned short Check, Temp, RH, Sum ;
 
 /* Function prototypes */
 void sclock(void);
-void sclock(void);
+void rclock(void);
 void DataDisplay(unsigned int);
 
 void DHT11_Data(void);

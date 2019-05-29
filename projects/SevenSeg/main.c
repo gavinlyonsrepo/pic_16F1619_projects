@@ -23,7 +23,7 @@ uint8_t counter=0; //counter incremented by Timer0 overflow.
 
 /* Function prototypes */
 void sclock(void);
-void sclock(void);
+void rclock(void);
 void DataDisplay(unsigned int );
 
 void ADC_Data(void);
