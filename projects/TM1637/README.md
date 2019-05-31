@@ -35,9 +35,10 @@ These modules are widely available.
 2 pins are connected from PORT B of PIC to the data and clock line of the module.
 Thus allowing control of a 4 digit seven segment module with just two GPIO lines.
 
-GPIO function on PIC, 2 lines to Tm1637 Module
-| --- | --- |
+GPIO function on PIC, 2 lines to Tm1637 Module.
+
 | Module pin  | Pic 16F1619 pin |
+| --- | --- |
 | DIO  | RB4 |
 | CLK  | RB5 |
 
