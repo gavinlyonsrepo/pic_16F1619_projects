@@ -34,11 +34,11 @@ Each Project has a short Readme, schematic and code files
 in the relevant sub folder. All code is written in C (xc8 compiler).
 
 
-**Project Code List:**
+**Project List:**
 
 | Num | Desc | Link |
 | --- | --- | --- |
-| 1  | 4 digit Seven segment display displaying Analog input data, 7 GPIO | [URL](projects/SevenSeg) |
+| 1  | 4 digit Seven segment display , 7 GPIO | [URL](projects/SevenSeg) |
 | 2  | 4 digit Seven segment displaying DHT11 sensors data, 7 GPIO| [URL](projects/DHT11) |
 | 3 |  HD44780-based LCD 16x02 library (4 bit mode, shift register, 3 GPIO ) | [URL](projects/LCD16x02)|
 | 4 |  HD44780-based LCD 16x02 library (4 bit mode, 6 GPIO ) | [URL](projects/LCD16X02_4bit_2)|
@@ -46,8 +46,8 @@ in the relevant sub folder. All code is written in C (xc8 compiler).
 | 6 |  HD44780-based LCD 16x02 library I2C bus & PCF8574 interface,  2 GPIO  |[URL](projects/LCD16x02_I2C)  |
 | 7 |  SSD1306 OLED 128 by 32 library I2C ( ASCII, text only) | [URL](projects/OLED_I2C)|
 | 8 |  Nokia 5110 LCD  PCD8544 controller library ( ASCII, text only)  | [URL](projects/NOKIA) |
-| 9 |  4 digit Seven segment module, 3 GPIO | [URL](projects/SevenSegModule) |
-| 10 | ----------- | --------------- |
+| 9 |  4 digit Seven segment module 74HC595, 3 GPIO | [URL](projects/SevenSegModule) |
+| 10 | 4 digit Seven segment module TM1637 library, 2 GPIO  | [URL](projects/TM1637) |
 
 Eagle Library
 --------------
