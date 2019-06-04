@@ -43,16 +43,30 @@ The data must be sent in two bytes , first byte of data to display data on segme
 second byte controls which digit to write to(D1, D2, D3, D4). 
 The display uses 3461BS, common anode, seven segment, 4-digit.
 So data must be inverted(from common cathode) so 0x3F becomes 0xC0 for a Zero symbol.
+
+(dp)gfedcba where dp is decimal point.
+or more info on segments lettering  of seven segment display, see here.
+[ seven segment display ](https://en.wikipedia.org/wiki/Seven-segment_display)
+
+To display zero with decimal point off. 
+
+| Data Hex | Data bin (dp)gfedcba | 
+| --- | --- |
+| 0x3F (common cathode) | 0b00111111 |
+| 0xC0 (common anode) |   0b11000000 |
+
+
 Also data must be sent in MSB first to this module. 
 
-GPIO function on PIC, 3 lines to 74HC595 Module
-| --- | --- |
+GPIO function on PIC, 3 lines to 74HC595 Module.
+
+
 | Module pin  | Pic 16F1619 pin |
+| --- | --- |
 | DIO serial data | RC0 |
 | RCLK  Latch | RC1 |
 | SCLK  Storage | RC2 |
 
 ![PICTURE](https://github.com/gavinlyonsrepo/pic_16F1619_projects/blob/master/images/7segmentmodule.jpg)
 
-For more info on segments lettering  of seven segment display, see here.
-https://en.wikipedia.org/wiki/Seven-segment_display
+F

@@ -19,7 +19,7 @@ Features
 ----------------------
 
 This library is a fork of the Arduino library ATMega328 by "avishorp".
-I forked it then converted it from C++ to C and modified it for PIC micro-controller
+I forked it then converted it from C++ to C and modified it for PIC micro-controller.
 
 In the main.c file a series of tests is carried out showing library function.
 A status LED on RA2 toggles on Timer after each test in main.c
