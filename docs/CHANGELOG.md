@@ -26,3 +26,6 @@
 
 ### Project 4 added 190419
 	* HD44780 LCD 4-bit mode(without shift register) library added 
+	
+### Project 11 added 02032020
+	*LM35 sensor data on 3 digit 7 segment, 11 GPIO added.

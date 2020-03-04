@@ -7,6 +7,8 @@ Overview
 * Description: A set of projects for a **Microchip** 
  PIC 16F1619 Micro-controller, written in C (xc8 complier).
 * Author: Gavin Lyons 
+* Contact: Upstream repo at github site below or glyons66@hotmail.com.
+* Copyright (C) 2018 Gavin Lyons , see LICENSE.md in documentation section.
 
 Table of contents
 ---------------------------
@@ -48,6 +50,7 @@ in the relevant sub folder. All code is written in C (xc8 compiler).
 | 8 |  Nokia 5110 LCD  PCD8544 controller library ( ASCII, text only)  | [URL](projects/NOKIA) |
 | 9 |  4 digit Seven segment module 74HC595, 3 GPIO | [URL](projects/SevenSegModule) |
 | 10 | 4 digit Seven segment module TM1637 library, 2 GPIO  | [URL](projects/TM1637) |
+| 11 | LM35 sensor data on 3 digit 7 segment, 11 GPIO | [URL](projects/LM35) |
 
 Eagle Library
 --------------
@@ -55,16 +58,3 @@ In the "lib" sub-folder there is a custom eagle library file (PIC_parts.lbr) for
  
  [Eagle library](docs/eagle/eagle_lib)
 
-
-Communication
------------
-* Contact: Upstream repo at github site below or glyons66@hotmail.com
-* Upstream repository: https://github.com/gavinlyonsrepo/pic_16F1619_projects
-
-Copyright
----------
-Copyright (C) 2018 Gavin Lyons 
-These programs are free software; you can redistribute it and/or modify
-it under the terms of the GNU General Public license published by
-the Free Software Foundation, see LICENSE.md in documentation section 
-for more details.
