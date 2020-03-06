@@ -4,7 +4,7 @@ Table of contents
 
   * [Overview](#overview)
   * [Features](#features)
-  * [Schmatic](#schematic)
+  * [Schematic](#schematic)
 
 Overview
 --------------------------------------------
