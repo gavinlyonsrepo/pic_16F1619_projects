@@ -1,4 +1,11 @@
 
+Table of contents
+---------------------------
+
+  * [Overview](#overview)
+  * [Features](#features)
+  * [Schmatic](#schematic)
+
 Overview
 --------------------------------------------
 * Name: SevenSeg 
@@ -9,12 +16,6 @@ on a 4 digit seven segment display.
 * PIC: PIC16F1619 
 * IDE:  MPLAB X v5.05
 * Development board: Microchip Curiosity Board, PIC16F1619
-
-Table of contents
----------------------------
-
-  * [Overview](#overview)
-  * [Features](#features)
 
 Features
 ----------------------
@@ -34,15 +35,6 @@ A status LED on RA2 toggles on same Timer.
 
 3 pins of PORT C of PIC outputs the data to a 74HC595 shift register which in 
 turn is connected to anodes of the SMA420564 common cathode display LED module.
-
-In this folder the main source code in C for program can be found in file main.c
-The code  generated using the MPLAB Code Configurator (MCC) tool is  
- in folder called mcc_generated_files
-
-MPLAB Code Configurator (MCC) is a free, graphical programming environment that generates ,
-C code to be inserted into your project. It is built in to the MPLAB IDE
-Using an interface, it enables and configures a rich set of 
-peripherals and functions specific to the application.
 
 RA4 = Analog In.
 RA2 = Status LED.
@@ -85,4 +77,4 @@ https://en.wikipedia.org/wiki/Seven-segment_display
 Schematic
 ------------------------
 
-![PICTURE ](https://github.com/gavinlyonsrepo/pic_16F1619_projects/blob/master/images/SevenSeg.png)
+![ Schematic ](https://github.com/gavinlyonsrepo/pic_16F1619_projects/blob/master/images/SevenSeg.png)

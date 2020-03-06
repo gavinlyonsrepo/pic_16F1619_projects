@@ -1,4 +1,9 @@
+Table of contents
+---------------------------
 
+  * [Overview](#overview)
+  * [Features](#features)
+  * [Schematic](#schematic)
 
 Overview
 --------------------------------------------
@@ -13,13 +18,6 @@ This exmaple here displays an analog input on OLED.
 * MCC version: 3.75
 * PIC: PIC16F1619 
 * IDE:  MPLAB X v5.00
-* Development board: Microchip Curiosity Board DM164137, PIC16F1619
-
-Table of contents
----------------------------
-
-  * [Overview](#overview)
-  * [Features](#features)
 
 Features
 ----------------------
@@ -59,36 +57,20 @@ The ASCII based font file is a called "font.h". Each character is printed in a 5
 The screen is 128 by 32 pixels. So (32/8) 4 rows available and (128/6) 21 columns available.
 The screen is divided into 8 byte pages(rows or lines). 
 4 rows/lines (128 by 32) are available by changing page value.
-8 rows/lines (128 by 64). Page value is 0-7 and passed to the various functions that need.
-
-1. page 0   8 
-2. page 1   16
-3. page 2   24
-4. page 3   32
-5. page 4   40
-6. page 5   48
-7. page 6   56
-8. page 7   64
 
 This library turns the OLED into a character 21x04 based screen.
-A total of 84 characters.
-There are no graphics in library and one font. 
+A total of 84 characters. There are no graphics in library and one font. 
 Bear in mind this PIC has limited memory. Data space is 1K and program space 8k.
 This example program is already at 50% of program space and 20% of data space.
 
 **OLED 128 by 64 SSD1306**
 
-I have only tested this on a OLED 128 by 32 SSD1306 but it should work on a OLED 128 by 64 SSD1306
+It will also work on a OLED 128 by 64 SSD1306,
 as well with one modification to library( comment in/out a block of marked code at top of oled.h)
  
-
 Two lines:
 
 ![SSD1306 1](https://github.com/gavinlyonsrepo/pic_16F1619_projects/blob/master/images/oledpic2.jpg)
-
-Four lines:
-
-![SSD1306 2 ](https://github.com/gavinlyonsrepo/pic_16F1619_projects/blob/master/images/oledpic1.jpg)
 
 Schematic
 ------------------------

@@ -1,4 +1,10 @@
 
+Table of contents
+---------------------------
+
+  * [Overview](#overview)
+  * [Features](#features)
+  
 Overview
 --------------------------------------------
 * Name: SevenSegModule
@@ -9,12 +15,6 @@ on a 4-Digit 7 Segment Display 74HC595 module
 * PIC: PIC16F1619 
 * IDE:  MPLAB X v5.05
 * Development board: Microchip Curiosity Board, PIC16F1619
-
-Table of contents
----------------------------
-
-  * [Overview](#overview)
-  * [Features](#features)
 
 Features
 ----------------------
@@ -55,11 +55,9 @@ To display zero with decimal point off.
 | 0x3F (common cathode) | 0b00111111 |
 | 0xC0 (common anode) |   0b11000000 |
 
-
 Also data must be sent in MSB first to this module. 
 
 GPIO function on PIC, 3 lines to 74HC595 Module.
-
 
 | Module pin  | Pic 16F1619 pin |
 | --- | --- |
@@ -68,5 +66,3 @@ GPIO function on PIC, 3 lines to 74HC595 Module.
 | SCLK  Storage | RC2 |
 
 ![PICTURE](https://github.com/gavinlyonsrepo/pic_16F1619_projects/blob/master/images/7segmentmodule.jpg)
-
-F

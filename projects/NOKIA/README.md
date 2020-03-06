@@ -1,4 +1,11 @@
 
+Table of contents
+---------------------------
+
+  * [Overview](#overview)
+  * [Features](#features)
+  * [Schematic](#schematic)
+  
 Overview
 --------------------------------------------
 * Name: Nokia 5110
@@ -7,21 +14,20 @@ Overview
 * Complier: xc8 v2.00 compiler
 * PIC: PIC16F1619 
 * IDE:  MPLAB X v5.00
-* Development board: Microchip Curiosity Board, PIC16F1619
-
-Table of contents
----------------------------
-
-  * [Overview](#overview)
-  * [Features](#features)
+* Arduino: This library was forked to arduino and expanded it is in the arduino [library manager](https://github.com/gavinlyonsrepo/NOKIA5110_TEXT)
 
 Features
 ----------------------
 
-The Nokia 5110 is a basic graphic LCD screen for lots of applications. It was originally intended to be used as a cell phone screen.  It uses the PCD8544 controller, which is the same used in the Nokia 3310 LCD. The PCD8544 is a low power CMOS LCD controller/driver, designed to drive a graphic display of 48 rows and 84 columns. All necessary functions for the display are provided in a single chip, including on-chip generation of LCD supply and bias voltages, resulting in a minimum of external components and low power consumption. The PCD8544 interfaces to microcontrollers through a serial bus interface(SPI).
-
-I did not use the MCC or the in-built SPI hardware and software for this library,
-Just bit banging.
+The Nokia 5110 is a basic graphic LCD screen for lots of applications. 
+It was originally intended to be used as a cell phone screen.  
+It uses the PCD8544 controller, which is the same used in the Nokia 3310 LCD. 
+The PCD8544 is a low power CMOS LCD controller/driver, designed to drive a graphic display of 48 rows and 84 columns. 
+All necessary functions for the display are provided in a single chip, including on-chip generation of LCD supply and bias voltages, 
+resulting in a minimum of external components and low power consumption. 
+The PCD8544 interfaces to microcontrollers through a serial bus interface(SPI).
+I did not use the MCC or the in-built SPI hardware for this library,
+it uses bit banging/software SPI. 
 
 GPIO function on PIC, 5 Nokia 5110 LCD lines SPI bus
 
@@ -58,7 +64,6 @@ This example program takes just 3% of data and 12% of program  space.
 RA2 = Status LED, toggles every 2 seconds , screen is refreshed on toggle.
 
 [Nokia 5110 LCD dataSheet ](https://www.sparkfun.com/datasheets/LCD/Monochrome/Nokia5110.pdf)
-
 
 Library output sample:
 

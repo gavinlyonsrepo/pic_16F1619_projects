@@ -1,4 +1,11 @@
 
+Table of contents
+---------------------------
+
+  * [Overview](#overview)
+  * [Features](#features)
+  * [Schematic](#schematic)
+  
 Overview
 --------------------------------------------
 * Name: LM35
@@ -7,12 +14,6 @@ Overview
 * Complier: xc8 v2.10 compiler
 * PIC: PIC16F1619 
 * IDE:  MPLAB X v5.30
-
-Table of contents
----------------------------
-
-  * [Overview](#overview)
-  * [Features](#features)
 
 Features
 ----------------------

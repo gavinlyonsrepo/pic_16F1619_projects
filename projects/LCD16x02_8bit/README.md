@@ -1,32 +1,25 @@
 
+Table of contents
+---------------------------
+
+  * [Overview](#overview)
+  * [Features](#features)
+  * [Schematic](#schematic)
+  
 Overview
 --------------------------------------------
 * Name: LCD 16X02 8 bit mode
 * Description: Display the data to a  LCD 16x02 display HD44780 using 8-bit mode.
 * Author: Gavin Lyons.
 * Complier: xc8 v2.00 compiler
-* PIC: PIC16F1619 
 * IDE:  MPLAB X v5.00
-* Development board: Microchip Curiosity Board, PIC16F1619
-
-Table of contents
----------------------------
-
-  * [Overview](#overview)
-  * [Features](#features)
 
 Features
 ----------------------
 
 Display data to a LCD 16x02 in 8-bit mode takes 11 GPIO pins. 
 
-In this folder the main source code in C for program can be found in file main.c
-The code  generated using the MPLAB Code Configurator (MCC) tool is  
-in folder called mcc_generated_files
-
-
-1. RA2 = Status LED.
-
+RA2 = Status LED.
 
 **HD44780-based character LCD**
 
