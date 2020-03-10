@@ -59,7 +59,7 @@ So for example for vdd 4.9  = 4.9/1023 = 480.
 There is also an optional offset define which can be used by user to calibrate sensor, IF it is required.
 
 
-![ picture ](https://github.com/gavinlyonsrepo/pic_16F1619_projects/blob/master/images/LM35out.jpg)
+![ picture ](https://github.com/gavinlyonsrepo/pic_16F1619_projects/blob/master/images/LM35pic.jpg)
 
 
 Schematic
@@ -67,12 +67,12 @@ Schematic
 
 Note:
 You can leave out the pnp transistors and connect the 3 Dx , Digit common lines directly to PIC I/O
-if the value of the 8 current limiting reistors is increased to at least 680 ohms.
+if the value of the 8 current limiting resistors is increased to at least 680 ohms.
 The disadvantage being the display is dimmer. Also the code will have to changed
 All Statements which switch Dx digits levels will have to be swapped.
 
-1. Vcc-Vd/Rd = I , 5-2/680 = 4.4mA
+1. Vcc-Vd/Rd = I , (5-2)/680 = 4.4mA
 2. I * No of LEDS = 4.4mA * 8 = 35mA
-3. The absoulte limit of a PIC on this PIC is 50mA.
+3. The absolute limit of a I/O pin on this PIC is 50mA.
 
 ![ Schematic ](https://github.com/gavinlyonsrepo/pic_16F1619_projects/blob/master/images/LM35.png)
