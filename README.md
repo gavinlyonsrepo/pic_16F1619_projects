@@ -28,18 +28,17 @@ in the relevant sub folder. All code is written in C (xc8 compiler).
 
 | Num | Desc | Link |
 | --- | --- | --- |
-| 1  | 4 digit 7 segment display, 7 GPIO | [URL](projects/SevenSeg) |
-| 2  | 4 digit 7 segment displaying DHT11 sensor data, 7 GPIO| [URL](projects/DHT11) |
-| 3 |  4 digit 7 segment 74HC595 based module, 3 GPIO | [URL](projects/SevenSegModule) |
-| 4 |  4 digit 7 segment TM1637 based module library, 2 GPIO ,| [URL](projects/TM1637) |
-| 5 |  3 digit 7 segment displaying LM35 sensor data, 11 GPIO | [URL](projects/LM35) |
+| 1 |  3 digit 7 segment timer alarm unit | [URL](projects/Timer) |
+| 2 |  3 digit 7 segment displaying LM35 sensor data | [URL](projects/LM35) |
+| 3  | 4 digit 7 segment displaying DHT11 sensor data | [URL](projects/DHT11) |
+| 4 |  4 digit 7 segment 74HC595 based module | [URL](projects/SevenSegModule) |
+| 5 |  4 digit 7 segment TM1637 based module library | [URL](projects/TM1637) |
 | 6 |  HD44780-based LCD 16x02 library (4 bit mode, shift register, 3 GPIO ) | [URL](projects/LCD16x02)|
 | 7 |  HD44780-based LCD 16x02 library (4 bit mode, 6 GPIO ) | [URL](projects/LCD16X02_4bit_2)|
 | 8 |  HD44780-based LCD 16x02 library  (8-bit mode , 11 GPIO )| [URL](projects/LCD16x02_8bit)  |
 | 9 |  HD44780-based LCD 16x02 library I2C bus & PCF8574 interface,  2 GPIO  |[URL](projects/LCD16x02_I2C)  |
-| 10 |  SSD1306 OLED 128 by 32 library I2C bus ( ASCII, text only) 2 GPIO | [URL](projects/OLED_I2C)|
+| 10 |  SSD1306 OLED 128 by 32 library I2C bus ( ASCII, text only) | [URL](projects/OLED_I2C)|
 | 11 |  Nokia 5110 LCD PCD8544 controller library ( ASCII, text only)  | [URL](projects/NOKIA) |
-
 
 Eagle Library
 --------------
