@@ -18,7 +18,6 @@ Overview
 Features
 ----------------------
 
-
 The display used here is a 3 digit, seven segment, common anode, red . 2381BS.
 Port C is connected to the 8 segments. RC0 to a .. RC7 to DP point. i.e. R7R6R5R4R3R2R1R0 <=> Dpgfedcba .
 Port B is used to control the digits.  D1D2D3 <=> RB6RB5RB4 where D1 is LSB.
@@ -33,7 +32,7 @@ RA4 = Connected thru a 10-bit ADC to sensor input of LM35 temperature sensor.
 RA2 = Status LED, optional, blinks every 4 seconds and at start up during a brief initialise delay. 
 The blink represents a sensor data read. The timing is controlled by timer0
 
-** LM35 sensor**
+**LM35 sensor**
 
 The LM35 outputs a signal on pin Vout. The LM35 is read via an analog input(RA4) 10mV per degree. 
 The ADC 10-bit resolution for 5V / 2^10 = 5/1024 = 0.004883.

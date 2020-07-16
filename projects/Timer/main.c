@@ -134,7 +134,7 @@ void Setup(void)
 void DisplayStartMessage(void)
 { 
     uint8_t counter = 0;
-    while(counter++ < 254) // 254 * ~15 mS ~= 3 seconds
+    while(counter++ < 254) // 254 * ~15 mS(display time)  ~= 3 seconds
     {
         DisplayData(1, 0, 0); // Display HiU
     }
@@ -147,10 +147,11 @@ void DisplayADCValue(void)
     uint8_t counter = 0;
     while(buttonpressed == false)
     {
-        if (++counter == 10) 
+        if (++counter == 100) // 100 * ~15mS (display time) ~= 1.5 seconds
         {
             ADC_Read = ADC_GetConversion(POT_AN3)>>6;
             Time_value = map(ADC_Read, 0, 1023, 1, 99);
+            counter = 0;
         }
         DisplayData(2, 0, 0);
         buttonpressed = ReadPushButton();
