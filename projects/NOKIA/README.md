@@ -5,6 +5,7 @@ Table of contents
   * [Overview](#overview)
   * [Features](#features)
   * [Schematic](#schematic)
+  * [Other versions](#other-versions)
   
 Overview
 --------------------------------------------
@@ -77,3 +78,13 @@ Schematic
 ------------------------
 
 ![PICTURE ](https://github.com/gavinlyonsrepo/pic_16F1619_projects/blob/master/images/NOKIA5110.png)
+
+Other versions
+---------------------------
+* Arduino: This library was forked to arduino and expanded it is in the arduino [library manager](https://github.com/gavinlyonsrepo/NOKIA5110_TEXT)
+* PIC: A more advanced ASCII text verison and also a Graphics version can be 
+found here at [URL](https://github.com/gavinlyonsrepo/pic_18F47K42_projects)
+These are for the PIC18F47K42, The text only version will work with the 16F1619 but the graphics is too big a program for this chip. 
+
+
+
