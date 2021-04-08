@@ -7,9 +7,8 @@ Overview
 * Description: A set of projects and libraries for a **Microchip** 
  PIC 16F1619 Micro-controller, written in C (xc8 complier).
 * Author: Gavin Lyons 
-* Contact: Upstream repo at github site below or glyons66@hotmail.com.
+* Contact: Upstream repo at github site below
 * Copyright (C) 2018 Gavin Lyons , see LICENSE.md in documentation section.
-* [Project repo URL](https://github.com/gavinlyonsrepo/pic_16F1619_projects)
 * [Website](https://gavinlyonsrepo.github.io/)
 
 Table of contents
