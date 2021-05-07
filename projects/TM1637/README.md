@@ -4,22 +4,12 @@ Overview
 * Name: TM1637
 * Description: A library for tm1637 4-digit seven segment module 3462BS.
 * Author: Gavin Lyons.
-* Complier: xc8 v2.05 compiler
-* PIC: PIC16F1619 
-* IDE:  MPLAB X v5.05
-* Development board: Microchip Curiosity Board, PIC16F1619
-
-Table of contents
----------------------------
-
-  * [Overview](#overview)
-  * [Features](#features)
 
 Features
 ----------------------
 
-This library is a fork of the Arduino library ATMega328 by "avishorp".
-I forked it then converted it from C++ to C and modified it for PIC micro-controller.
+This library is a port of the Arduino library ATMega328 by github user "avishorp".
+It was converted  from C++ to C and modified it for PIC micro-controller.
 
 In the main.c file a series of tests is carried out showing library function.
 A status LED on RA2 toggles on Timer after each test in main.c

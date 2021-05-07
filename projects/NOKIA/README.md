@@ -1,21 +1,9 @@
-
-Table of contents
----------------------------
-
-  * [Overview](#overview)
-  * [Features](#features)
-  * [Schematic](#schematic)
-  * [Other versions](#other-versions)
   
 Overview
 --------------------------------------------
 * Name: Nokia 5110
 * Description: Nokia 5110 library LCD display(PCD8544) ASCII text only
 * Author: Gavin Lyons.
-* Complier: xc8 v2.00 compiler
-* PIC: PIC16F1619 
-* IDE:  MPLAB X v5.00
-* Arduino: This library was forked to arduino and expanded it is in the arduino [library manager](https://github.com/gavinlyonsrepo/NOKIA5110_TEXT)
 
 Features
 ----------------------
@@ -84,7 +72,7 @@ Other versions
 * Arduino: This library was forked to arduino and expanded it is in the arduino [library manager](https://github.com/gavinlyonsrepo/NOKIA5110_TEXT)
 * PIC: A more advanced ASCII text verison and also a Graphics version can be 
 found here at [URL](https://github.com/gavinlyonsrepo/pic_18F47K42_projects)
-These are for the PIC18F47K42, The text only version will work with the 16F1619 but the graphics is too big a program for this chip. 
+These are for the PIC18F47K42, The text only version will work with the 16F1619 but the graphics one is too big a program for this chip. 
 
 
 

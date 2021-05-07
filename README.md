@@ -1,30 +1,15 @@
 
-![PIC](https://github.com/gavinlyonsrepo/pic_16F1619_projects/blob/master/images/pic16f1619.jpg)
-
 Overview
 --------------------------------------------
-* Name: pic_16F1619_projects
 * Description: A set of projects and libraries for a **Microchip** 
- PIC 16F1619 Micro-controller, written in C (xc8 complier).
+ PIC 16F1619 Micro-controller 20-pin, 8-bit.
 * Author: Gavin Lyons 
-* Contact: Upstream repo at github site below
-* Copyright (C) 2018 Gavin Lyons , see LICENSE.md in documentation section.
+* Toolchain: XC8 , MPLAB X IDE and MCC.
+* Copyright (C) 2018 Gavin Lyons , see MIT LICENSE.md in documentation section.
 * [Website](https://gavinlyonsrepo.github.io/)
-
-Table of contents
----------------------------
-
-  * [Overview](#overview)
-  * [Table of contents](#table-of-contents)
-  * [Project List](#project-list)
-  * [Eagle Library](#eagle-library)
 
 Project List
 -----------------------------------------
-A set of projects, libraries and example code for the 20-pin, 8-bit PIC 16F1619 Microcontroller,
-made by *Microchip*. Each Project has a Readme, schematic and code files
-in the relevant sub folder. All code is written in C (xc8 compiler).
-
 **Project List:**
 
 | Num | Desc | Link |

@@ -1,20 +1,12 @@
 
-Table of contents
----------------------------
+![PICTURE](https://github.com/gavinlyonsrepo/pic_16F1619_projects/blob/master/images/7segmentmodule.jpg)
 
-  * [Overview](#overview)
-  * [Features](#features)
-  
 Overview
 --------------------------------------------
 * Name: SevenSegModule
 * Description: Display an analog input 
 on a 4-Digit 7 Segment Display 74HC595 module
 * Author: Gavin Lyons.
-* Complier: xc8 v2.05 compiler
-* PIC: PIC16F1619 
-* IDE:  MPLAB X v5.05
-* Development board: Microchip Curiosity Board, PIC16F1619
 
 Features
 ----------------------
@@ -35,7 +27,7 @@ These modules have 5 pins, 3 data lines + power. They have a common anode
 Manufacture of module is HIFEI.
 
 3 pins are connected from PORT C of PIC to the data lines of the 74HC595 module.
-These modules are widely available, also you can easily built your own as per schematic. 
+These modules are widely available, also you can easily build your own as per schematic. 
 They have two shift registers daisy chained together which allows user to 
 control a 4 digit seven segment display with just THREE GPIO pins.
 
@@ -65,4 +57,3 @@ GPIO function on PIC, 3 lines to 74HC595 Module.
 | RCLK  Latch | RC1 |
 | SCLK  Storage | RC2 |
 
-![PICTURE](https://github.com/gavinlyonsrepo/pic_16F1619_projects/blob/master/images/7segmentmodule.jpg)

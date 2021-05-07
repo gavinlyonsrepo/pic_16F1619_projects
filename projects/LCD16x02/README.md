@@ -1,18 +1,9 @@
 
-Table of contents
----------------------------
-
-  * [Overview](#overview)
-  * [Features](#features)
-  * [Schematic](#schematic)
-  
 Overview
 --------------------------------------------
 * Name: LCD 16X02
 * Description: Display the data from an analog input to an LCD 16x02 display HD44780 using 4-bit mode.
 * Author: Gavin Lyons.
-* Complier: xc8 v2.00 compiler
-* IDE:  MPLAB X v5.00
 
 Features
 ----------------------

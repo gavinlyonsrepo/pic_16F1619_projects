@@ -1,21 +1,9 @@
-
-Table of contents
----------------------------
-
-  * [Overview](#overview)
-  * [Features](#features)
-  * [Schematic](#schematic)
-
 Overview
 --------------------------------------------
 * Name: SevenSeg 
 * Description: Display an analog input 10-bit ADC value(0-1023)
 on a 4 digit seven segment display.
 * Author: Gavin Lyons.
-* Complier: xc8 v2.05 compiler
-* PIC: PIC16F1619 
-* IDE:  MPLAB X v5.05
-* Development board: Microchip Curiosity Board, PIC16F1619
 
 Features
 ----------------------

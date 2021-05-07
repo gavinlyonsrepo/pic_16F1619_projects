@@ -5,17 +5,7 @@ Overview
 * Description: Display the data from a DHt11 humdity sensor to 
 a 4 digit seven segment display.
 * Author: Gavin Lyons.
-* Complier: xc8 v2.05 compiler
-* PIC: PIC16F1619 
 * IDE:  MPLAB X v5.05
-* Development board: Microchip Curiosity Board, PIC16F1619
-
-Table of contents
----------------------------
-
-  * [Overview](#overview)
-  * [Features](#features)
-  * [Schematic](#schematic)
   
 Features
 ----------------------

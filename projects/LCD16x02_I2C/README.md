@@ -1,11 +1,3 @@
-
-Table of contents
----------------------------
-
-  * [Overview](#overview)
-  * [Features](#features)
-  * [Schematic](#schematic)
-
 Overview
 --------------------------------------------
 * Name: LCD16x02_I2C
@@ -13,11 +5,9 @@ Overview
 to an LCD 16X02 display HD44780 via the I2C bus and a PCF8574 Interface "backpack" board.
 * Author: Gavin Lyons.
 * Complier: xc8 v2.00 compiler
-* PIC: PIC16F1619 
 * IDE:  MPLAB X v5.00
 * Foundation services library: 0.1.31 (I2C)
 * MCC version: 3.75
-* Development board: Microchip Curiosity Board DM164137, PIC16F1619
 
 Features
 ----------------------

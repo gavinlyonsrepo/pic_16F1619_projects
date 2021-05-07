@@ -1,19 +1,8 @@
-
-Table of contents
----------------------------
-
-  * [Overview](#overview)
-  * [Features](#features)
-  * [Schematic](#schematic)
   
 Overview
 -----------------------------
 * Name: Timer/Alarm unit
 * Description: Timer/Alarm unit using a 3 digit, common anode, 7 segment display.
-* Author: Gavin Lyons.
-* Complier: xc8 v2.10 compiler
-* PIC: PIC16F1619 
-* IDE:  MPLAB X v5.30
 
 Features
 ----------------------

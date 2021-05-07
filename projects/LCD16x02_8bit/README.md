@@ -1,10 +1,3 @@
-
-Table of contents
----------------------------
-
-  * [Overview](#overview)
-  * [Features](#features)
-  * [Schematic](#schematic)
   
 Overview
 --------------------------------------------

@@ -1,10 +1,4 @@
-Table of contents
----------------------------
-
-  * [Overview](#overview)
-  * [Features](#features)
-  * [Schematic](#schematic)
-  
+ 
 Overview
 --------------------------------------------
 * Name: LCD 16X02
@@ -12,7 +6,6 @@ Overview
 without using shift register. 6 GPIO pins.
 * Author: Gavin Lyons.
 * Complier: xc8 v2.05 compiler
-* PIC: PIC16F1619 
 * IDE:  MPLAB X v5.15
 
 Features
