@@ -65,46 +65,6 @@
 #define PULL_UP_ENABLED      1
 #define PULL_UP_DISABLED     0
 
-// get/set LED_STATUS aliases
-#define LED_STATUS_TRIS                 TRISAbits.TRISA2
-#define LED_STATUS_LAT                  LATAbits.LATA2
-#define LED_STATUS_PORT                 PORTAbits.RA2
-#define LED_STATUS_WPU                  WPUAbits.WPUA2
-#define LED_STATUS_OD                   ODCONAbits.ODA2
-#define LED_STATUS_ANS                  ANSELAbits.ANSA2
-#define LED_STATUS_SetHigh()            do { LATAbits.LATA2 = 1; } while(0)
-#define LED_STATUS_SetLow()             do { LATAbits.LATA2 = 0; } while(0)
-#define LED_STATUS_Toggle()             do { LATAbits.LATA2 = ~LATAbits.LATA2; } while(0)
-#define LED_STATUS_GetValue()           PORTAbits.RA2
-#define LED_STATUS_SetDigitalInput()    do { TRISAbits.TRISA2 = 1; } while(0)
-#define LED_STATUS_SetDigitalOutput()   do { TRISAbits.TRISA2 = 0; } while(0)
-#define LED_STATUS_SetPullup()          do { WPUAbits.WPUA2 = 1; } while(0)
-#define LED_STATUS_ResetPullup()        do { WPUAbits.WPUA2 = 0; } while(0)
-#define LED_STATUS_SetPushPull()        do { ODCONAbits.ODA2 = 0; } while(0)
-#define LED_STATUS_SetOpenDrain()       do { ODCONAbits.ODA2 = 1; } while(0)
-#define LED_STATUS_SetAnalogMode()      do { ANSELAbits.ANSA2 = 1; } while(0)
-#define LED_STATUS_SetDigitalMode()     do { ANSELAbits.ANSA2 = 0; } while(0)
-
-// get/set ADC_IN aliases
-#define ADC_IN_TRIS                 TRISAbits.TRISA4
-#define ADC_IN_LAT                  LATAbits.LATA4
-#define ADC_IN_PORT                 PORTAbits.RA4
-#define ADC_IN_WPU                  WPUAbits.WPUA4
-#define ADC_IN_OD                   ODCONAbits.ODA4
-#define ADC_IN_ANS                  ANSELAbits.ANSA4
-#define ADC_IN_SetHigh()            do { LATAbits.LATA4 = 1; } while(0)
-#define ADC_IN_SetLow()             do { LATAbits.LATA4 = 0; } while(0)
-#define ADC_IN_Toggle()             do { LATAbits.LATA4 = ~LATAbits.LATA4; } while(0)
-#define ADC_IN_GetValue()           PORTAbits.RA4
-#define ADC_IN_SetDigitalInput()    do { TRISAbits.TRISA4 = 1; } while(0)
-#define ADC_IN_SetDigitalOutput()   do { TRISAbits.TRISA4 = 0; } while(0)
-#define ADC_IN_SetPullup()          do { WPUAbits.WPUA4 = 1; } while(0)
-#define ADC_IN_ResetPullup()        do { WPUAbits.WPUA4 = 0; } while(0)
-#define ADC_IN_SetPushPull()        do { ODCONAbits.ODA4 = 0; } while(0)
-#define ADC_IN_SetOpenDrain()       do { ODCONAbits.ODA4 = 1; } while(0)
-#define ADC_IN_SetAnalogMode()      do { ANSELAbits.ANSA4 = 1; } while(0)
-#define ADC_IN_SetDigitalMode()     do { ANSELAbits.ANSA4 = 0; } while(0)
-
 // get/set SDA aliases
 #define SDA_TRIS                 TRISBbits.TRISB4
 #define SDA_LAT                  LATBbits.LATB4

@@ -52,11 +52,7 @@
 void __interrupt() INTERRUPT_InterruptManager (void)
 {
     // interrupt handler
-    if(INTCONbits.TMR0IE == 1 && INTCONbits.TMR0IF == 1)
-    {
-        TMR0_ISR();
-    }
-    else if(INTCONbits.PEIE == 1)
+    if(INTCONbits.PEIE == 1)
     {
         if(PIE2bits.BCL1IE == 1 && PIR2bits.BCL1IF == 1)
         {
@@ -66,15 +62,7 @@ void __interrupt() INTERRUPT_InterruptManager (void)
         {
             i2c_driver_i2cISR();
         } 
-        else
-        {
-            //Unhandled Interrupt
-        }
     }      
-    else
-    {
-        //Unhandled Interrupt
-    }
 }
 /**
  End of File
