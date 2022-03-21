@@ -18,7 +18,7 @@
 
 
 // Section: Defines
-#define INIT_DELAY 1000
+#define INIT_DELAY 50
 #define DISPLAY_DELAY_2 2000
 #define DISPLAY_DELAY 5000
 
@@ -28,7 +28,8 @@ void HelloWorld(void);
 void CursorMoveTest(void);
 void ScrollTest(void);
 void gotoTest(void);
-void resetTest(void);
+void CursorTypeTest(void);
+void EntryModeTest(void);
 void customChar(void);
 void backLightTest(void);
 
@@ -36,11 +37,12 @@ void backLightTest(void);
 void main(void) {
     Setup();
     while (1) {
-        HelloWorld();
-        CursorMoveTest();
+        EntryModeTest(); // test entry mode commands
+        HelloWorld(); // test string + character data
+        CursorMoveTest(); //test cursor move
         ScrollTest();
         gotoTest();
-        resetTest();
+        CursorTypeTest();
         customChar();
         backLightTest();
 
@@ -58,45 +60,89 @@ void Setup(void) {
     // initialize the device
     SYSTEM_Initialize();
     __delay_ms(INIT_DELAY);
-    PCF8574_LCDInit(CURSOR_ON);
+    PCF8574_LCDInit(LCDCursorTypeOn, 2, 16, 0x27);
 }
 
 void HelloWorld(void) {
-    PCF8574_LCDGOTO(1, 0);
+    PCF8574_LCDGOTO(LCDLineNumberOne, 0);
     PCF8574_LCDSendString("Hello");
-    PCF8574_LCDGOTO(2, 0);
+    PCF8574_LCDGOTO(LCDLineNumberTwo, 0);
     PCF8574_LCDSendString("World"); // Display a string
     PCF8574_LCDSendChar('!'); // Display a single character
     __delay_ms(DISPLAY_DELAY);
 }
 
 void CursorMoveTest(void) {
-    PCF8574_LCDMoveCursor(MOVE_RIGHT, 2);
+    PCF8574_LCDMoveCursor(LCDMoveRight, 2);
     __delay_ms(DISPLAY_DELAY);
-    PCF8574_LCDMoveCursor(MOVE_LEFT, 2);
+    PCF8574_LCDMoveCursor(LCDMoveLeft, 2);
 }
 
 void ScrollTest(void) {
     for (uint8_t i = 0; i < 5; i++) {
-        PCF8574_LCDScroll(MOVE_RIGHT, 1);
+        PCF8574_LCDScroll(LCDMoveRight, 1);
         __delay_ms(DISPLAY_DELAY_2);
     }
-    PCF8574_LCDScroll(MOVE_LEFT, 5);
+    PCF8574_LCDScroll(LCDMoveLeft, 5);
     __delay_ms(DISPLAY_DELAY_2);
 }
 
 void gotoTest(void) {
     PCF8574_LCDClearScreen();
-    PCF8574_LCDGOTO(1, 10);
+    PCF8574_LCDGOTO(LCDLineNumberOne, 10);
     PCF8574_LCDSendChar('A');
-    PCF8574_LCDGOTO(2, 2);
+    PCF8574_LCDGOTO(LCDLineNumberTwo, 2);
     PCF8574_LCDSendString("Line");
     __delay_ms(DISPLAY_DELAY);
 }
 
-void resetTest(void) {
-    PCF8574_LCDResetScreen(CURSOR_BLINK);
+void CursorTypeTest(void) {
+    PCF8574_LCDResetScreen(LCDCursorTypeOnBlink); //type 4 cursor
+    PCF8574_LCDGOTO(LCDLineNumberTwo, 0);
+    PCF8574_LCDSendString("Cursor no 4");
     __delay_ms(DISPLAY_DELAY);
+    PCF8574_LCDClearLine(LCDLineNumberTwo);
+
+    PCF8574_LCDResetScreen(LCDCursorTypeOff); //type 1 cursor
+    PCF8574_LCDGOTO(LCDLineNumberTwo, 0);
+    PCF8574_LCDSendString("Cursor no 1");
+    __delay_ms(DISPLAY_DELAY);
+    PCF8574_LCDClearLine(LCDLineNumberTwo);
+
+    PCF8574_LCDResetScreen(LCDCursorTypeBlink); //type 2 cursor
+    PCF8574_LCDGOTO(LCDLineNumberTwo, 0);
+    PCF8574_LCDSendString("Cursor no 2");
+    __delay_ms(DISPLAY_DELAY);
+    PCF8574_LCDClearLine(LCDLineNumberTwo);
+
+    PCF8574_LCDResetScreen(LCDCursorTypeOn); // Back to initial state , type 3
+    PCF8574_LCDGOTO(LCDLineNumberTwo, 0);
+    PCF8574_LCDSendString("Cursor no 3");
+    __delay_ms(DISPLAY_DELAY_2);
+}
+
+void EntryModeTest(void) {
+
+    PCF8574_LCDSendCmd(LCDEntryModeOne);
+    PCF8574_LCDGOTO(LCDLineNumberOne, 8);
+    PCF8574_LCDSendString("1234"); // <-C4321
+    __delay_ms(DISPLAY_DELAY_2);
+    PCF8574_LCDClearScreenCmd();
+
+    PCF8574_LCDSendCmd(LCDEntryModeTwo);
+    PCF8574_LCDGOTO(LCDLineNumberTwo, 8);
+    PCF8574_LCDSendString("1234"); // C4321->
+    __delay_ms(DISPLAY_DELAY_2);
+    PCF8574_LCDClearScreenCmd();
+
+    PCF8574_LCDSendCmd(LCDEntryModeFour);
+    PCF8574_LCDGOTO(LCDLineNumberTwo, 8);
+    PCF8574_LCDSendString("1234"); // <-1234C
+    __delay_ms(DISPLAY_DELAY_2);
+    PCF8574_LCDClearScreenCmd();
+
+    PCF8574_LCDSendCmd(LCDEntryModeThree); // Set back to default entry mode
+    PCF8574_LCDClearScreenCmd();
 }
 
 void customChar(void) {
@@ -128,7 +174,8 @@ void customChar(void) {
     // Print out custom characters
 
     for (uint8_t i = 0; i < 8; i++) {
-        PCF8574_LCDSendData(i);
+        PCF8574_LCDPrintCustomChar(i);
+        PCF8574_LCDMoveCursor(LCDMoveRight, 1);
     }
 
     __delay_ms(DISPLAY_DELAY);
@@ -137,11 +184,12 @@ void customChar(void) {
 
 void backLightTest(void) {
     PCF8574_LCDBackLightSet(false);
-    PCF8574_LCDGOTO(2, 1);
+    PCF8574_LCDGOTO(LCDLineNumberTwo, 1);
     PCF8574_LCDSendString("Backlight test");
     __delay_ms(DISPLAY_DELAY);
     PCF8574_LCDBackLightSet(true);
     PCF8574_LCDClearScreen();
 }
+
 
 // EOF

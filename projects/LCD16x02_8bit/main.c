@@ -13,21 +13,21 @@
 */
 
 #include "mcc_generated_files/mcc.h"
-#include "lcd.h"
+#include "HD44780_8bit_lcd.h"
 
 /*  Main application  */
 void main(void)
 {
     SYSTEM_Initialize();
     LED_STATUS_SetHigh(); 
-    LCD_init();
     __delay_ms(10);
+    LCDInit(LCDCursorTypeOn, 2, 16);
     while (1)
     {
-            LCD_cmd(LCD_LINE1);
-            LCD_string("Hello Line 1:");
-            LCD_cmd(LCD_LINE2);
-            LCD_string("Hello Line 2:");
+            LCDGOTO(LCDLineNumberOne, 0);
+            LCDSendString("Hello Line 1:");
+            LCDGOTO(LCDLineNumberTwo, 0);
+            LCDSendString("Hello Line 2:");
             __delay_ms(2000);    
     }
 }

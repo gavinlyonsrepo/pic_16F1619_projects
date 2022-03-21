@@ -11,10 +11,12 @@
 
 #include "mcc_generated_files/mcc.h"
 
-#ifndef LCD_HD44780_H
-#define LCD_HD44780_H
+#ifndef LCD_HD44780_FOUR_H
+#define LCD_HD44780_FOUR_H
 
 // Section: Defines
+
+#define DATAPORT LATC // Port C mapped to LCD
 
 // Command Byte Codes See  URL : dinceraydin.com/lcd/commands.htm for HD44780 CMDs
 
@@ -39,14 +41,6 @@
 #define LCD_LINE_ADR4_16  0xD0 // line 4 untested no part, for 16x04  
 #define LCD_CG_RAM 0x40 //Set pointer in character-generator RAM (CG RAM address)
 
-// Codes for I2C byte,
-// Byte = DATA-led-en-rw-rs (en=enable rs = reg select)(led on/off,  rw always write)
-#define LCD_DATA_BYTE_ON 0x0D //enable=1 and rs =1 1101  DATA-led-en-rw-rs
-#define LCD_DATA_BYTE_OFF 0x09 // enable=0 and rs =1 1001 DATA-led-en-rw-rs
-#define LCD_CMD_BYTE_ON 0x0C  // enable=1 and rs =0 1100 COMD-led-en-rw-rs
-#define LCD_CMD_BYTE_OFF 0x08 // enable=0 and rs =0 1000 COMD-led-en-rw-rs
-#define LCD_BACKLIGHTON_MASK 0x0F // XXXX-1111 
-#define LCD_BACKLIGHTOFF_MASK 0x07 // XXXX-0111
 
 // Section: enums
 
@@ -78,24 +72,26 @@ typedef enum {
 
 
 // Section: Function prototypes
-void PCF8574_LCDInit(LCDCursorType_e c, uint8_t row, uint8_t col, uint8_t I2Caddr);
-void PCF8574_LCDDisplayON(bool onOff);
-void PCF8574_LCDResetScreen(LCDCursorType_e c);
-void PCF8574_LCDBackLightSet(bool onOff);
-void PCF8574_LCDClearLine(LCDLineNumber_e lineNo);
-void PCF8574_LCDClearScreen(void);
-void PCF8574_LCDClearScreenCmd(void);
-void PCF8574_LCDHome(void);
-void PCF8574_LCDMoveCursor(LCDDirectionType_e, uint8_t moveSize);
-void PCF8574_LCDScroll(LCDDirectionType_e, uint8_t ScrollSize);
-void PCF8574_LCDGOTO(LCDLineNumber_e, uint8_t col);
+void LCDInit(LCDCursorType_e c, uint8_t row, uint8_t col);
+void LCDDisplayON(bool onOff);
+void LCDResetScreen(LCDCursorType_e c);
+void LCDBackLightSet(bool onOff);
+void LCDClearLine(LCDLineNumber_e lineNo);
+void LCDClearScreen(void);
+void LCDClearScreenCmd(void);
+void LCDHome(void);
+void LCDMoveCursor(LCDDirectionType_e, uint8_t moveSize);
+void LCDScroll(LCDDirectionType_e, uint8_t ScrollSize);
+void LCDGOTO(LCDLineNumber_e, uint8_t col);
 
-void PCF8574_LCDSendCmd(unsigned char cmd);
-void PCF8574_LCDSendData(unsigned char data);
-void PCF8574_LCDSendString(char *str);
-void PCF8574_LCDSendChar(char data);
-void PCF8574_LCDCreateCustomChar(uint8_t location, uint8_t* charmap);
-void PCF8574_LCDPrintCustomChar(uint8_t location);
-int PCF8574_LCDPrintf(const char *fmt, ...);
+void LCDSendCmd(unsigned char cmd);
+void LCDSendData(unsigned char data);
+void LCDSendString(char *str);
+void LCDSendChar(char data);
+void LCDCreateCustomChar(uint8_t location, uint8_t* charmap);
+void LCDPrintCustomChar(uint8_t location);
+int LCDPrintf(const char *fmt, ...);
+
+void LCDIsBusy(void);
 
 #endif

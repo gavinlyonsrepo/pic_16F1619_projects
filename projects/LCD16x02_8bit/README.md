@@ -30,9 +30,9 @@ Pins 7 to 14 are data lines (D0-D7). Data transfer to and from the display can b
 | Ground | 1  |	VSS |	Ground | 
 | n/a | 2 |	VCC |	+5v | 
 | n/a | 3 |	VEE |	Contrast adjustment (VO) | 
-| RB0 |  4 |	RS 	| Register Select. 0:Command, 1: Data | 
-| RB1 | 5 |	R/W |	Read/Write, R/W=0: Write & R/W=1: Read | 
-| RB2 | 6 |	EN 	 | Enable. Falling edge triggered | 
+| RB4 |  4 |	RS 	| Register Select. 0:Command, 1: Data | 
+| RB5 | 5 |	R/W |	Read/Write, R/W=0: Write & R/W=1: Read | 
+| RB6 | 6 |	EN 	 | Enable. Falling edge triggered | 
 | RC0 | 7 |	D0 	| Data Bit 0 | 
 | RC1 | 8 |	D1 | 	Data Bit 1 | 
 | RC2 |  9 |	D2 	| Data Bit 2 | 
