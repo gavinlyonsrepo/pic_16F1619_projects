@@ -10,13 +10,14 @@ Overview
 Features
 ----------------------
 
-This is pic version of my[Arduino Library here](https://github.com/gavinlyonsrepo/NOKIA5110_TEXT)
-Full information and pictures of output there. 
-Main difference is this is software SPI only.
-Also this Pic program memory is limited at 8K.
-so you will not be able to use use every single font enabled simultaneously 
-+ bitmap data in main.c at same time. The main.c contains a sequence of tests to 
+This is pic version of my [Arduino Library here](https://github.com/gavinlyonsrepo/NOKIA5110_TEXT)
+. Full information and pictures of output there. 
+Main difference between versions, is PIC version is software SPI only.
+Also the Pic16F1619  program memory is limited at 8K.
+So you will not be able to use use every single font enabled simultaneously & bitmap data in main.c at same time. The main.c contains a sequence of tests to 
 test library. If a font is not enabled nothing will show for that specific test.
+Fonts are enabled in the font data file by commenting in the relevant defines,
+see FONT DEFINE SECTION  .
 
 GPIO function on PIC, 5 Nokia 5110 LCD lines Software SPI bus
 
