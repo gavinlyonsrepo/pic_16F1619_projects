@@ -1,7 +1,7 @@
 /*
  * File: HD44780_I2C_lcd.h
  * Description:
- * HD44780-based character LCD 16x02 I2C(PCF8574) library header file
+ * HD44780-based character LCD 16x02  library header file, 4 bit mode + shift register : 3 GPIO.
  * Author: Gavin Lyons.
 */
 
