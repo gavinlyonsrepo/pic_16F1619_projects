@@ -192,13 +192,13 @@ void LCDGOTO(LCDLineNumber_e line, uint8_t col) {
             break;
         case LCDLineNumberThree:
             if (_NumColsLCD == 20)
-                LCDSendCmd(LCD_LINE_ADR3_20 | col);
+                LCDSendCmd(LCD_LINE_ADR3_20 + col);
             else
                 LCDSendCmd(LCD_LINE_ADR3_16 | col);
             break;
         case LCDLineNumberFour:
             if (_NumColsLCD == 20)
-                LCDSendCmd(LCD_LINE_ADR4_20 | col);
+                LCDSendCmd(LCD_LINE_ADR4_20 + col);
             else
                 LCDSendCmd(LCD_LINE_ADR4_16 | col);
             ;
