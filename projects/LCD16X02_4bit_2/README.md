@@ -1,8 +1,9 @@
  
 Overview
 --------------------------------------------
-* Name: LCD 16X02
-* Description: LCD 16x02 display library for the HD44780 using 4-bit mode,
+* Name: LCD 16X02 4 bit 
+* Description: 
+LCD 16x02 display library for the HD44780 using 4-bit mode,
 without using shift register. 6 GPIO pins.
 * Author: Gavin Lyons.
 * Complier: xc8 v2.05 compiler
@@ -41,7 +42,7 @@ Note: in this library I am not using the r/w line i tie it to ground, it is not 
 
 The Vdd pin (2) should be connected to the positive power supply and Vss (1) to ground. Pin 3 (Vo or Vee) is for display contrast adjustment.
 
-Pins 7 to 14 are data lines (D0-D7). Data transfer to and from the display can be achieved either in 8-bit or 4-bit mode. The 8-bit mode uses all eight data lines to transfer a byte, whereas, in 4-bit mode, a byte is transferred as two 4-bit nibbles. In the later case, only the upper 4 data lines (D4-D7) are used. This technique is beneficial as this saves some input/output pins of microcontroller. This example uses 4-bit mode.
+Pins 7 to 14 are data lines (D0-D7). Data transfer to and from the display can be achieved either in 8-bit or 4-bit mode. The 8-bit mode uses all eight data lines to transfer a byte, whereas, in 4-bit mode, a byte is transferred as two 4-bit nibbles. In the later case, only the upper 4 data lines (D4-D7) are used. This technique is beneficial as this saves some input/output pins of microcontroller. This example uses 4-bit mode. The LCD library will also support other sizes eg 20x04.
 
 ![pinout](https://github.com/gavinlyonsrepo/pic_16F1619_projects/blob/master/images/LCD.jpg)
 

@@ -2,7 +2,8 @@
 Overview
 --------------------------------------------
 * Name: LCD 16X02 8 bit mode
-* Description: Display the data to a  LCD 16x02 display HD44780 using 8-bit mode.
+* Description: 
+Display the data to a  LCD 16x02 display HD44780 using 8-bit mode.
 * Author: Gavin Lyons.
 * Complier: xc8 v2.00 compiler
 * IDE:  MPLAB X v5.00
@@ -23,7 +24,7 @@ Read/Write(RW): This signal is used to write the data/cmd to LCD and reads the b
 
 The Vdd pin (2) should be connected to the positive power supply and Vss (1) to ground. Pin 3 (Vee) is for display contrast adjustment.
 
-Pins 7 to 14 are data lines (D0-D7). Data transfer to and from the display can be achieved either in 8-bit or 4-bit mode. The 8-bit mode uses all eight data lines to transfer a byte, whereas, in 4-bit mode, a byte is transferred as two 4-bit nibbles. In the later case, only the upper 4 data lines (D4-D7) are used. This design uses 8-bit.
+Pins 7 to 14 are data lines (D0-D7). Data transfer to and from the display can be achieved either in 8-bit or 4-bit mode. The 8-bit mode uses all eight data lines to transfer a byte, whereas, in 4-bit mode, a byte is transferred as two 4-bit nibbles. In the later case, only the upper 4 data lines (D4-D7) are used. This design uses 8-bit. The LCD library will also support other sizes eg 20x04.
 
 | PIC  Pin | LCD Pin |  	Symbol |	Pin Function  |
 | --- | ---  | --- | --- |  
