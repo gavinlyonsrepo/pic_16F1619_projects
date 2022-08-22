@@ -4,7 +4,7 @@ Overview
 * Description: Custom character(text only)  based  library for
 a OLED display 128 by 32 pixels  with SSD1306 via the I2C bus. Code should also work 
 with a 128 by 64 display by commenting in/out small block of code in library file.
-This exmaple here displays an analog input on OLED.
+This example here displays an analogue input on OLED.
 * Author: Gavin Lyons.
 * Complier: xc8 v2.00 compiler
 * Foundation services library: 0.1.31 (I2C)
@@ -18,10 +18,10 @@ Features
 In this folder the main source code in C for program can be found in file main.c
 The code generated using the MPLAB Code Configurator (MCC) tool is  
 in a folder called mcc_generated_files. There is also an Oled library(OLED.c and OLED.h)
-and a font.h file that contains an ASCII pixelfont.
+and a font.h file that contains an ASCII pixel-font.
 
 **Analog input** 
-To demonstrate the library an analog input (10-bit ADC value(0-1023)) of a PIC pin is displayed
+To demonstrate the library an analogue input (10-bit ADC value(0-1023)) of a PIC pin is displayed
 on the OLED. The ADC value is converted to voltage value .
 (It assumes vdd  = 5V) which maps 0-1023 to 0-5V ranges.
 

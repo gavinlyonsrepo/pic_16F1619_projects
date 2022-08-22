@@ -95,7 +95,8 @@ void Oled_SetContrast( uint8_t contrast )
 //function to clear OLED by writing to it.
 void Oled_Clear(void)
 {
-  int i =0;
+    Oled_SelectPage(0);  
+    int i =0;
     // OLED 128* 32 pixels = total pixels -> (4096 / 1 byte) = 512 passes.
     // SSD1306_CLEAR_SIZE  = 512 for 128* 32 or 1024  for 128*64
     for (i; i<SSD1306_CLEAR_SIZE ; i++) 
